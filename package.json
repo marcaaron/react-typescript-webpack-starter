@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "lite-server",
-    "build": "webpack"
+    "build:dev": "webpack -d",
+    "dev": "concurrently \"yarn start\" \"yarn build:dev --watch\""
   },
   "dependencies": {
     "react": "^16.5.0",
