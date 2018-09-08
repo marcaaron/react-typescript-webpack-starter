@@ -1,14 +1,17 @@
 import * as React from 'react';
+import { Component } from 'react';
 
 interface HomeProps {
   name: string;
   age: number;
 }
 
-export class Home extends React.Component<HomeProps, {}> {
+class Home extends Component<HomeProps, {}> {
   render(){
     return (
-      <div>Hello, {this.props.name} you are {this.props.age}</div>
+      <p>Hello, {this.props.name} you are {this.props.age}</p>
     )
   }
 }
+
+export default Home;
